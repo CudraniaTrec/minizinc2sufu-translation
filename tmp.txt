@@ -1,0 +1,125 @@
+(source_file
+    (declaration
+        type: (type_base
+            (primitive_type)
+        )
+        name: (identifier)
+    )
+    (declaration
+        type: (array_type
+            (type_base
+                (infix_operator
+                    left: (integer_literal)
+                    right: (identifier)
+                )
+            )
+            (type_base
+                (primitive_type)
+            )
+        )
+        name: (identifier)
+    )
+    (line_comment)
+    (declaration
+        type: (type_base
+            (infix_operator
+                left: (integer_literal)
+                right: (identifier)
+            )
+        )
+        name: (identifier)
+    )
+    (declaration
+        type: (array_type
+            (type_base
+                (infix_operator
+                    left: (integer_literal)
+                    right: (identifier)
+                )
+            )
+            (type_base
+                (infix_operator
+                    left: (integer_literal)
+                    right: (identifier)
+                )
+            )
+        )
+        name: (identifier)
+    )
+    (line_comment)
+    (constraint
+        (infix_operator
+            left: (identifier)
+            right: (call
+                name: (identifier)
+                arguments: (array_comprehension
+                    (indexed_access
+                        collection: (identifier)
+                        indices: (identifier)
+                    )
+                    (generator
+                        (identifier)
+                        (infix_operator
+                            left: (integer_literal)
+                            right: (identifier)
+                        )
+                    )
+                )
+            )
+        )
+    )
+    (line_comment)
+    (declaration
+        type: (type_base
+            (primitive_type)
+        )
+        name: (identifier)
+    )
+    (constraint
+        (infix_operator
+            left: (identifier)
+            right: (call
+                name: (identifier)
+                arguments: (array_comprehension
+                    (indexed_access
+                        collection: (identifier)
+                        indices: (indexed_access
+                            collection: (identifier)
+                            indices: (identifier)
+                        )
+                    )
+                    (generator
+                        (identifier)
+                        (infix_operator
+                            left: (integer_literal)
+                            right: (identifier)
+                        )
+                    )
+                )
+            )
+        )
+    )
+    (goal
+        strategy: (identifier)
+    )
+    (output
+        (parenthesised_expression
+            (array_literal
+                (call
+                    name: (identifier)
+                    arguments: (identifier)
+                )
+                (string_literal)
+                (call
+                    name: (identifier)
+                    arguments: (identifier)
+                )
+                (string_literal)
+                (call
+                    name: (identifier)
+                    arguments: (identifier)
+                )
+            )
+        )
+    )
+)

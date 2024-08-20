@@ -1,0 +1,15 @@
+[package]
+name = "minizinc-compile"
+description = "Minizinc compiler"
+version = "0.0.1"
+edition = "2018"
+readme = "README.md"
+
+
+[dependencies]
+tree-sitter = "0.22.6"
+lazy_static = "1.4.0"
+walkdir = "2.3.2"
+
+[build-dependencies]
+cc = "1.0.87"
